@@ -91,51 +91,216 @@
     </header>
     <main>
         <div class="container">
-            <ul class="banner__list">
-                <li class="banner__item">
-                    <h2 class="banner__title">
-                        Крем-брюле и пломбир с малиновым джемом
-                    </h2>
-                    <button class="btn btn-center" value="ice1" type="submit">Давайте оба!</button>
+            <div class="promo">
+                <ul class="promo__list">
+                    <li class="promo__item">
+                        <h2 class="promo__title">
+                            Крем-брюле и пломбир с малиновым джемом
+                        </h2>
+                        <button class="btn btn-center" value="ice1" type="submit">Давайте оба!</button>
+                    </li>
+                    <li class="promo__item visually-hidden">
+                        <h2 class="promo__title">
+                            Шоколадный пломбир и лимонный сорбет
+                        </h2>
+                        <button class="btn btn-center" value="ice1" type="submit">Давайте оба!</button>
+                    </li>
+                    <li class="promo__item visually-hidden">
+                        <h2 class="promo__title">
+                            Пломбир с помадкой<br> и клубничеый щербет
+                        </h2>
+                        <button class="btn btn-center" value="ice1" type="submit">Давайте оба!</button>
+                    </li>
+                </ul>
+                <ul class="radio__list">
+                    <li>
+                        <label>
+                            <input class="promo__toggle visually-hidden" type="radio" value="1" name="iceCream" checked>
+                            <span class="promo__radio promo__radio-1"></span>
+                            <span class="visually-hidden">Крем-брюле и пломбир с малиновым джемом</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="promo__toggle visually-hidden" type="radio" value="2" name="iceCream">
+                            <span class="promo__radio promo__radio-2"></span>
+                            <span class="visually-hidden">Шоколадный пломбир и лимонный сорбет</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="promo__toggle visually-hidden" type="radio" value="3" name="iceCream">
+                            <span class="promo__radio promo__radio-3"></span>
+                            <span class="visually-hidden">Пломбир с помадкой и клубничеый щербет</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <ul class="banners__list">
+                <li class="banners__item">
+                    <h3 class="banners__title">
+                        Малинка даром!
+                    </h3>
+                    <p class="banners__text">
+                        При покупке 2 кг любого фруктового мороженого, добавим
+                        в ваш заказ банку малинового варенья бесплатно.
+                    </p>
+                    <button class="btn btn-banners" type="submit">Хочу варенье!</button>
                 </li>
-                <li class="banner__item visually-hidden">
-                    <h2 class="banner__title">
-                        Шоколадный пломбир и лимонный сорбет
-                    </h2>
-                    <button class="btn btn-center" value="ice1" type="submit">Давайте оба!</button>
-                </li>
-                <li class="banner__item visually-hidden">
-                    <h2 class="banner__title">
-                        Пломбир с помадкой<br> и клубничеый щербет
-                    </h2>
-                    <button class="btn btn-center" value="ice1" type="submit">Давайте оба!</button>
+                <li class="banners__item">
+                    <h3 class="banners__title">
+                        Шоколадки даром!
+                    </h3>
+                    <p class="banners__text">
+                        При покупке 2 кг пломбира, добавим в ващ заказ упаковку
+                        вкуснейшей щоколадной присыпки совершенно бесплатно.
+                    </p>
+                    <button class="btn btn-banners btn-chocolate" type="submit">Хочу шоколадки!</button>
                 </li>
             </ul>
-            <ul class="radio__list">
+            <ul class="hits__list">
                 <li>
-                    <label>
-                        <input class="banner__toggle visually-hidden" type="radio" value="1" name="iceCream" checked>
-                        <span class="banner__radio banner__radio-1"></span>
-                        <span class="visually-hidden">Крем-брюле и пломбир с малиновым джемом</span>
-                    </label>
+                    <a href="#" class="hits__item">
+                        <h3 class="hits__title">
+                            Сливочное с апельстновым джемом и цитрусовой стружкой
+                        </h3>
+                        <span class="hits__price">
+                            310 &#8381;<span class="hits__price-low">/кг</span>
+                        </span>
+                        <img class="hits__img" src="/img/1.jpg" width="267" height="267" alt="">
+                        <span class="hits__isHit"></span>
+                        <object class="btn-wrapper">
+                            <a class="btn btn-hits" href="#">Быстрый просмотр</a>
+                        </object>
+                    </a>
                 </li>
                 <li>
-                    <label>
-                        <input class="banner__toggle visually-hidden" type="radio" value="2" name="iceCream">
-                        <span class="banner__radio banner__radio-2"></span>
-                        <span class="visually-hidden">Шоколадный пломбир и лимонный сорбет</span>
-                    </label>
+                    <a class="hits__item" href="#">
+                        <h3 class="hits__title">
+                            Сливочно кофейное с кусочками шоколада
+                        </h3>
+                        <span class="hits__price">
+                            380 &#8381;<span class="hits__price-low">/кг</span>
+                        </span>
+                        <img class="hits__img" src="/img/2.jpg" width="267" height="267" alt="">
+                        <span class="hits__isHit"></span>
+                        <object class="btn-wrapper">
+                            <a class="btn btn-hits" href="#">Быстрый просмотр</a>
+                        </object>
+                    </a>
                 </li>
                 <li>
-                    <label>
-                        <input class="banner__toggle visually-hidden" type="radio" value="3" name="iceCream">
-                        <span class="banner__radio banner__radio-3"></span>
-                        <span class="visually-hidden">Пломбир с помадкой и клубничеый щербет</span>
-                    </label>
+                    <a class="hits__item" href="#">
+                        <h3 class="hits__title">
+                            Сливочно-клубничное с присыпкой из белого шоколада
+                        </h3>
+                        <span class="hits__price">
+                            355 &#8381;<span class="hits__price-low">/кг</span>
+                        </span>
+                        <img class="hits__img" src="/img/3.jpg" width="267" height="267" alt="">
+                        <span class="hits__isHit"></span>
+                        <object class="btn-wrapper">
+                            <a class="btn btn-hits" href="#">Быстрый просмотр</a>
+                        </object>
+                    </a>
+                </li>
+                <li>
+                    <a class="hits__item" href="#">
+                        <h3 class="hits__title">
+                            Сливочное крем-брюле с карамельной подливкой
+                        </h3>
+                        <span class="hits__price">
+                            415 &#8381;<span class="hits__price-low">/кг</span>
+                        </span>
+                        <img class="hits__img" src="/img/4.jpg" width="267" height="267" alt="">
+                        <span class="hits__isHit"></span>
+                        <object class="btn-wrapper">
+                            <a class="btn btn-hits" href="#">Быстрый просмотр</a>
+                        </object>
+                    </a>
                 </li>
             </ul>
+            <section class="benefits">
+                <h3 class=benefits__title>Магазин Глэйси – это онлайн- и офлайн-магазин по продаже мороженого
+                    собственного производства на развес
+                </h3>
+                <div class="benefits__wrapper">
+                    <ul class="benefits__list">
+                        <li class="benefits__item benefits__item-1">
+                            Все наше мороженное изготавливается на собственном
+                            производстве, с использованием современного оборудования
+                            и проверенных временем технологий
+                        </li>
+                        <li class="benefits__item benefits__item-2">
+                            Для приготовления мороженого используются настоящие
+                            сливки и молоко высочайшего качества. Все дополнительные
+                            ингредиенты и добавки произведены из натурального,
+                            экологически чистого сырья.
+                        </li>
+                    </ul>
+                    <ul class="benefits__list">
+                        <li class="benefits__item benefits__item-3">
+                            Закупка ингридиентов производится только у проверенных
+                            фермерских хозяйсв и компаний, с которыми нас связывает
+                            долговременное сотрудничество.
+                        </li>
+                        <li class="benefits__item benefits__item-4">
+                            Доставка нашего мороженного до заказчика осуществляется
+                            в специально термопаке, который не дает мороженому
+                            растаять в пути и позволяет сохранить превосходный вкус.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="news-mailing">
+                <div class="news">
+                    <h3 class="news__title">Новое в нашем блоге</h3>
+                    <a class="news__link" href="#">
+                        10 способов сервировки фруктовых щербетов к столу
+                    </a>
+                </div>
+                <div class="mailing">
+                    <div class="mailing__wrapper">
+                        <p class="mailing__text">
+                            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                            всего самого вкусного, что у нас происходит. Обещаем не спамить
+                            и не слать всякой ненужной ерунды. Честно =)
+                        </p>
+                        <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
+                            <label class="mailing__lable">
+                                <input class="mailing__input" type="email" placeholder="email@example.com">
+                                <span class="visually-hidden">Введите Ваш email</span>
+                            </label>
+                            <button class="btn btn-mailing" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="address__wrapper">
+            <dl class="address">
+                <dt class="address__title">
+                    Адрес главного офиса<br> и офлайн-магазина:
+                </dt>
+                <dd class="address__position">
+                    ул. Большая Конюшенная 19/8, Санкт-Петербург
+                </dd>
+                <dt class="address__title">
+                    Для заказов по телефону:
+                </dt>
+                <dd class="address__position">
+                    8 812 450-25-25<br>
+                    <span class="address__title">
+                        (с 10 до 20 ежедневно)
+                </dd>
+            </dl>
+            <button class="btn btn-address">Форма обратной связи</button>
+            </div>
+
         </div>
     </main>
+   
 </body>
 
 </html>
