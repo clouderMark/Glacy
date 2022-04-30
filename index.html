@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
+<body class="body-dg">
+    <header class="header">
         <div class="container">
             <nav class="main__nav">
                 <div class="nav__container">
@@ -18,7 +18,7 @@
                     </a>
                     <ul class="nav__list nav__list-left">
                         <li class="nav__item">
-                            <a class="nav__link nav__catalog nav__link-hover" href="#">
+                            <a class="nav__link nav__catalog nav__link-hover" href="catalog.html">
                                 Каталог
                             </a>
                             <ul class="nav__sublist">
@@ -123,6 +123,7 @@
     </header>
     <main>
         <div class="container">
+            <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
             <div class="promo">
                 <ul class="promo__list">
                     <li class="promo__item">
@@ -300,7 +301,7 @@
                         </p>
                         <form class="mailing__form" action="https://echo.htmlacademy.ru" method="post">
                             <label class="mailing__lable">
-                                <input class="mailing__input" name="milinga" type="email" placeholder="email@example.com">
+                                <input class="mailing__input" name="mailing" type="email" placeholder="email@example.com">
                                 <span class="visually-hidden">Введите Ваш email</span>
                             </label>
                             <button class="btn btn-mailing" type="submit">Отправить</button>
@@ -407,6 +408,7 @@
         </button>
     </section>
     <script src="js/popUp.js"></script>
+    <script src="js/popUpIndex.js"></script>
     <script src="js/bg.js"></script>
 </body>
 

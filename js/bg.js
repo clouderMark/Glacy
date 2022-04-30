@@ -1,5 +1,6 @@
 let radios = document.getElementsByName('iceCream');
 let val = 1;
+
 for (let radio of radios) {
     radio.addEventListener('click', function () {
         val = radio.value;

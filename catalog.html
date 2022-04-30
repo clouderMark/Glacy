@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Глэйси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-catalog">
+        <div class="container">
+            <nav class="main__nav">
+                <div class="nav__container">
+                    <a class="nav__logo-link" href="index.html">
+                        <img class="nav__logo" src="img/Logo.png" width="154" height="64" alt="Глэйси шоп">
+                    </a>
+                    <ul class="nav__list nav__list-left">
+                        <li class="nav__item">
+                            <a class="nav__link nav__catalog nav__link-hover" href="#">
+                                Каталог
+                            </a>
+                            <ul class="nav__sublist">
+                                <li class="sublist__item">
+                                    <a class="sublist__link sublist__new" href="#">
+                                        Новинки
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a class="sublist__link" href="#">
+                                        Сливочное
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a class="sublist__link" href="#">
+                                        Щербеты
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a class="sublist__link" href="#">
+                                        Фруктовый лед
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a class="sublist__link" href="#">
+                                        Мелорин
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link-hover" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link-hover" href="#">
+                                О Компании
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav__list nav__list-right">
+                    <li class="nav__item nav__item-right">
+                        <a class="nav__link nav__search nav__link-right nav__link-hover" href="#">
+                            <img src="img/loupe.png" width="17" height="17" alt="Поиск">
+                        </a>
+                        <section class="modal modal-search">
+                            <h2 class="visually-hidden">Поиск по сайту</h2>
+                            <form class="modal__search" action="https://echo.htmlacademy.ru" method="post">
+                                <input class="search__input" type="text" placeholder="Крем-брюле">
+                            </form>
+
+                        </section>
+                    </li>
+                    <li class="nav__item nav__item-right">
+                        <a class="nav__link nav__link-enter nav__link-right nav__link-hover" href="#">
+                            <span class="nav__enter">Вход</span>
+                        </a>
+                        <section class="modal modal-enter">
+                            <h2 class="visually-hidden">Вход</h2>
+                            <form class="enter__search" action="https://echo.htmlacademy.ru" method="post">
+                                <label>
+                                    <input class="enter__mail" name="login" type="text" placeholder="email@example.com">
+                                    <span class="visually-hidden">Введите Ваш емаил</span>
+                                </label>
+                                <label>
+                                    <input class="enter__pass" name="password" type="text" placeholder="*******">
+                                    <span class="visually-hidden">Введите Ваш пароль</span>
+                                </label>
+                                <div class="enter__wrapper">
+                                    <button class="btn btn-enter" type="submit">Войти</button>
+                                    <div class="enter__help">
+                                        <a href="#">
+                                            Забыли пароль?
+                                        </a>
+                                        <a href="#">
+                                            Новая регистрация
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </section>
+                    </li>
+                    <li class="nav__item nav__item-right">
+                        <a class="nav__link nav__link-right nav__link-hover" href="#">
+                            <span class="nav__basket">Пусто</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="working">
+                <span class="working__days">
+                    С 10 до 20, ежедневно
+                </span>
+                <span class="working__phone">
+                    8 812 450-25-25
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                        Каталог
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                        Сливочное
+                    </a>
+                </li>
+            </ul>
+            <h1 class="catalog__title">Сливочное мороженое</h1>
+            <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form__item">
+                    <span class="catalog__subtitle">Сортировка:</span>
+                    <select class="catalog__select catalog__input-list" name="select">
+                        <option value="1" selected>по популярности</option>
+                        <option value="2">по цене-возрастанию</option>
+                        <option value="3">по цене-убыванию</option>
+                    </select>
+                    <img class="select-icon-down" src="img/icon-down-dir.png">
+                </div>
+                <div class="form__item">
+                    <span class="catalog__subtitle catalog__subtitle-price">Цена:</span>
+                    <div class="rangeslider catalog__input-list">
+                        <input class="min" name="range_1" type="range" min="1" max="10000" value="1000" />
+                        <input class="max" name="range_1" type="range" min="1" max="10000" value="9000" />
+                        <span class="range_min light left">1000</span>
+                        <span class="range_max light right">9000</span>
+                        <span class="range__rub"></span>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <span class="catalog__subtitle">Жирность:</span>
+                    <div class="catalog__input-list">
+                        <label>
+                            <input class="catalog__toggle-radio visually-hidden" type="radio" name="fat" value="0">
+                            <span class="catalog__radio">0%</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-radio visually-hidden" type="radio" name="fat" value="10">
+                            <span class="catalog__radio">до 10%</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-radio visually-hidden" type="radio" name="fat" value="30">
+                            <span class="catalog__radio">до 30%</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-radio visually-hidden" type="radio" name="fat" value="30+"
+                                checked>
+                            <span class="catalog__radio catalog__radio-last">выше 30%</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <span class="catalog__subtitle">Наполнители:</span>
+                    <div class="catalog__input-list">
+                        <label>
+                            <input class="catalog__toggle-checkbox visually-hidden" type="checkbox" name="filler"
+                                value="1" checked>
+                            <span class="catalog__checkbox catalog__checkbox-first"> шоколадные</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-checkbox visually-hidden" type="checkbox" name="filler"
+                                value="2" checked>
+                            <span class="catalog__checkbox">сахарные присыпки</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-checkbox visually-hidden" type="checkbox" name="filler"
+                                value="3">
+                            <span class="catalog__checkbox">фрукты</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-checkbox visually-hidden" type="checkbox" name="filler"
+                                value="4">
+                            <span class="catalog__checkbox">сиропы</span>
+                        </label>
+                        <label>
+                            <input class="catalog__toggle-checkbox visually-hidden" type="checkbox" name="filler"
+                                value="5">
+                            <span class="catalog__checkbox catalog__checkbox-last">джемы</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="catalog__btn" type="submit">Применить</button>
+            </form>
+            <ul class="hits__list">
+                <template id="catalog__item"> 
+                    <li>
+                        <a href="#" class="hits__item">
+                            <h3 class="hits__title">
+
+                            </h3>
+                            <div class="hits__price">
+                                <span class="hits__price-content">
+
+                                </span>
+                                &#8381;<span class="hits__price-low">/кг</span>
+                            </div>
+                            <img class="hits__img" src="" width="267" height="267" alt="">
+                            <!-- <span class="hits__isHit"></span> -->
+                            <object class="btn-wrapper">
+                                <a class="btn btn-hits" href="#">Быстрый просмотр</a>
+                            </object>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+            <ul class="paginator__list">
+                <li class="paginator__item">
+                    <button class="paginator__button paginator__button-first ">
+                        <span class="button-back"></span>
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__button">
+                        1
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__button">
+                        2
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__button">
+                        3
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__button">
+                        4
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__button">
+                        5
+                    </button>
+                </li>
+                <li class="paginator__item">
+                    <button class="paginator__button paginator__button-last">
+                        <span class="button-up"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer ">
+        <div class="container footer__container catalog__footer">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="#"><img class="social__icon" src="img/twitter.png" width="32" height="32"
+                            alt="Twitter."></a>
+                </li>
+                <li class="social__item">
+                    <a href="#"><img class="social__icon" src="img/inst.png" width="32" height="32"
+                            alt="Instagram."></a>
+                </li>
+                <li class="social__item">
+                    <a href="#"><img class="social__icon" src="img/FB.png" width="32" height="32" alt="Facebook."></a>
+                </li>
+                <li class="social__item">
+                    <a href="#"><img class="social__icon" src="img/VK.png" width="32" height="32" alt="VK."></a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#">
+                        Для поставщиков
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">
+                        О производстве
+                    </a>
+
+                </li>
+                <li class="menu__item">
+                    <a href="#">
+                        Наши документы
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">
+                        Экологические стандарты
+                    </a>
+                </li>
+            </ul>
+            <div class="maden">
+                <a href="#">
+                    <img class="maden__img" src="img/logo-htmlacademy-small.png" width="108" height="39">
+                </a>
+                <span class="maden__text">
+                    Сделано в HTML Academy &copy; 2022
+                </span>
+            </div>
+        </div>
+        <div class="overlay visually-hidden">
+    </footer>
+    <section class="modal modal-support">
+        <h2 class="support__title">
+            Мы обязательно вам ответим!
+        </h2>
+        <form class="support__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="userName">
+                Имя и фамилия пользователя.
+            </label>
+            <input class="support__userName" name="userName" type="text" id="userName" placeholder="Имя Фамилия">
+            <lable class="visually-hidden" for="email">
+                Введите Ваш емаил.
+            </lable>
+            <input class="support__email" name="login-support" type="text" id="email" placeholder="email@example.com">
+            <lable class="visually-hidden" for="message">
+                Введите текс сообщения.
+            </lable>
+            <textarea class="support__message" name="message" placeholder="В свободной форме"></textarea>
+            <button class="btn btn-support" type="submit">Отправить</button>
+        </form>
+        <buton class="modal-close">
+            <span class="visually-hidden">Закрыть</span>
+            </button>
+    </section>
+    <script src="js/popUp.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/Ranger.js"></script>
+    <script src="js/autoCatalog.js"></script>
+</body>
+
+</html>
