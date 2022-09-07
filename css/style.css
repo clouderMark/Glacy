@@ -1,23 +1,23 @@
 @font-face {
     font-family: "Roboto";
-    src: url('/fonts/roboto.woff') format('woff'),
-        url('/fonts/roboto.woff2') format('woff2');
+    src: url('../fonts/roboto.woff') format('woff'),
+        url('../fonts/roboto.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url('/fonts/robotobold.woff') format('woff'),
-        url('/fonts/robotobold.woff2') format('woff2');
+    src: url('../fonts/robotobold.woff') format('woff'),
+        url('../fonts/robotobold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url('/fonts/robotomedium.woff') format('woff'),
-        url('/fonts/robotomedium.woff2') format('woff2');
+    src: url('../fonts/robotomedium.woff') format('woff'),
+        url('../fonts/robotomedium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
@@ -37,8 +37,8 @@ body {
 }
 
 .body-dg {
-    background-image: url('/img/iceCream1.png'),
-        url('/img/backLight1.png');
+    background-image: url('../img/iceCream1.png'),
+        url('../img/backLight1.png');
 }
 
 a {
@@ -191,11 +191,11 @@ input[type="radio"].visually-hidden {
 }
 
 .nav__enter::before {
-    background-image: url('/img/Enter.png');
+    background-image: url('../img/Enter.png');
 }
 
 .nav__basket::before {
-    background-image: url('/img/basket.png');
+    background-image: url('../img/basket.png');
 }
 
 .nav__sublist {
@@ -393,12 +393,12 @@ input[type="radio"].visually-hidden {
 }
 
 .banners__item:first-of-type {
-    background-image: url('/img/crimsonBg.jpg');
+    background-image: url('../img/crimsonBg.jpg');
     margin-right: 5px;
 }
 
 .banners__item:last-of-type {
-    background-image: url('/img/chocolateBg.jpg');
+    background-image: url('../img/chocolateBg.jpg');
 }
 
 .banners__title {
@@ -449,7 +449,7 @@ input[type="radio"].visually-hidden {
 
     border-radius: 50%;
     background-color: white;
-    background-image: url('/img/Hit.png');
+    background-image: url('../img/Hit.png');
 
     order: 1;
     z-index: 1;
@@ -542,7 +542,7 @@ input[type="radio"].visually-hidden {
 /****************************************/
 .benefits {
     color: #323232;
-    background-image: url('/img/waffelsShort.jpg');
+    background-image: url('../img/waffelsShort.jpg');
     border-radius: 16px;
 
     padding: 24px 36px 3px 19px;
@@ -581,23 +581,23 @@ input[type="radio"].visually-hidden {
 }
 
 .benefits__item-1::before {
-    background-image: url('/img/iceCream.png');
+    background-image: url('../img/iceCream.png');
     top: -13px;
 }
 
 .benefits__item-2::before {
-    background-image: url('/img/leaf.png');
+    background-image: url('../img/leaf.png');
     top: -13px;
 }
 
 .benefits__item-3::before {
-    background-image: url('/img/cow.png');
+    background-image: url('../img/cow.png');
 
     left: -58px;
 }
 
 .benefits__item-4::before {
-    background-image: url('/img/termometer.png');
+    background-image: url('../img/termometer.png');
 
     top: -13px;
     left: -58px;
@@ -632,7 +632,7 @@ input[type="radio"].visually-hidden {
 
 .news {
     background-color: white;
-    background-image: url('/img/strawberryBg.jpg');
+    background-image: url('../img/strawberryBg.jpg');
 
     margin-right: 5px;
     padding-top: 7px;
@@ -660,7 +660,7 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing {
-    background-image: url('/img/postBg.png');
+    background-image: url('../img/postBg.png');
     padding: 5px;
 }
 
@@ -716,7 +716,7 @@ input[type="radio"].visually-hidden {
 
 /********************************/
 .map {
-    background-image: url('/img/map.jpg');
+    background-image: url('../img/map.jpg');
 
     max-width: 1200px;
     height: 430px;
@@ -736,7 +736,7 @@ input[type="radio"].visually-hidden {
 
     height: 141px;
     width: 80px;
-    background-image: url('/img/pin.png');
+    background-image: url('../img/pin.png');
 }
 
 .address {
@@ -966,7 +966,7 @@ footer {
     content: "";
 
     position: absolute;
-    background-image: url('/img/heart.png');
+    background-image: url('../img/heart.png');
 
     top: 3px;
     left: -22px;
